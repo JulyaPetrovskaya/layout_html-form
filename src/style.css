@@ -9,11 +9,13 @@
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
 }
-.fieldset{
+
+.fieldset {
   display: block;
   width: 1000px;
   margin: 10px auto;
 }
+
 .block {
   display: block;
   margin: 7px;
