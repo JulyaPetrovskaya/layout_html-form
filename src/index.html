@@ -13,7 +13,7 @@
   <body>
     <h1 class="title visually-hidden">HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="http://localhost:8080/" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
         <div class="block">
@@ -22,6 +22,10 @@
             type="text" 
             id ="surname" 
             name="surname"
+            autocomplete="off"
+            pattern="\w+"
+            minlength="3"
+            maxlength="32"
           >
         </div>
         <div class="block">
@@ -30,6 +34,10 @@
             type="text" 
             id ="name" 
             name="name"
+            autocomplete="off"
+            pattern="\w+"
+            minlength="3"
+            maxlength="32"
           >
         </div>
         <div class="block">
@@ -40,6 +48,7 @@
             max="100" 
             id ="old" 
             name="old"
+            value="12"
           >
         </div>
         <div class="block">
@@ -67,6 +76,7 @@
             type="email" 
             name="email" 
             required
+            placeholder="email@example.com"
           >
         </div>
         <div class="block">
@@ -111,11 +121,15 @@
         <div class="block">
           <label for="cars">
           What are your favorite brand of cars?
-            <select name="cars" multiple>
-              <option name="cars"></option>
+            <select 
+              name="cars" 
+              class="cars"
+              multiple
+            >
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
               <option value="Lada">Lada</option>
+              <option value=" "></option>
             </select>
           </label>
         </div>
@@ -147,9 +161,9 @@
           </label>
         </div>
       </fieldset>
+      <div class="button">
+        <button type="submit">Submit</button>
+      </div>
     </form>
-    <div class="button">
-      <button type="submit">Submit</button>
-    </div>
   </body>
 </html>
