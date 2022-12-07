@@ -15,9 +15,8 @@
   margin-bottom: 20px;
 }
 
-.button {
-  display: block;
-  margin: 10px auto;
+.fieldset :last-child {
+  margin-bottom: 0;
 }
 
 .block {
