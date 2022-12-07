@@ -13,5 +13,76 @@
   <body>
     <h1 class="title visually-hidden">HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="" method="post">
+
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
+        <div class="block">
+          <label for="surname">Surname:</label>
+          <input type="text" id ="surname" name="surname">
+        </div>
+        <div class="block">
+          <label for="name">Name:</label>
+          <input type="text" id ="name" name="name">
+        </div>
+        <div class="block">
+          <label for="old">How olg are you?</label>
+          <input type="number" min="1" max="100" id ="old" name="old">
+        </div>
+        <div class="block">
+          <label for="birth">Full date of birth:</label>
+          <input type="date" name="birth">
+        </div>
+        <div class="block">
+          <label for="check">I accept the term of the agreement</label>
+          <input type="checkbox" name="check" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+          <div class="block">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="block">
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+          </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+          <div class="block">
+            Do you love cats?
+            <input type="radio" name="pets">
+            <label for="pets">Yes</label>
+            <input type="radio" name="pets">
+            <label for="pets">No</label>
+          </div>
+          <div class="block">
+            <label for="color">What is your favorite color?</label>
+            <input type="color" name="color">
+          </div>
+          <div class="block">
+            <label for="time">What time do you go to bed?</label>
+            <input type="time" name="time">
+          </div>
+          <div class="block">
+            <label for="cars">
+              What are your favorite brand of cars?
+              <select>
+                <option value="" name="cars"></option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Lada">Lada</option>
+              </select>
+            </label>
+          </div>
+          <div>
+
+          </div>
+      </fieldset>
+  </form>
   </body>
 </html>
