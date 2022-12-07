@@ -111,7 +111,7 @@
         <div class="block">
           <label for="cars">
           What are your favorite brand of cars?
-            <select>
+            <select name="cars" multiple>
               <option name="cars"></option>
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
@@ -119,9 +119,37 @@
             </select>
           </label>
         </div>
-        <div>
+        <div class="block">
+          <label for="vol">How do you rate our work?</label>
+          <input 
+            type="range" 
+            id="vol" 
+            name="vol" 
+            min="0" 
+            max="10"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
+        <div class="block">
+          <label for="vol">Comments:</label>
+          <textarea name="comments"></textarea>
+        </div>
+        <div class="block">
+          <label for="recom">Would you recommend us?
+            <select name="recom">
+              <option name="recom"></option>
+              <option value="yes" selected>yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
         </div>
       </fieldset>
     </form>
+    <div class="button">
+      <button type="submit">Submit</button>
+    </div>
   </body>
 </html>

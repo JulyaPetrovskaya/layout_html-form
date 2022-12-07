@@ -10,13 +10,27 @@
   white-space: nowrap !important;
 }
 
+body {
+  --button: 1px;
+  width: var(--button);
+  margin: 10px 50px ;
+}
+
 .fieldset {
   display: block;
-  width: 1000px;
+  width: 80vw;
+  margin: 10px auto;
+}
+
+.button {
+  display: block;
+  width: var(--button);
   margin: 10px auto;
 }
 
 .block {
   display: block;
-  margin: 7px;
+  margin: 6px;
 }
+
+
